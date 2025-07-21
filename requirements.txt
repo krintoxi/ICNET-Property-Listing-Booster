@@ -1,0 +1,6 @@
+requests
+stem
+colorama
+undetected-chromedriver
+selenium
+fake-useragent
