@@ -1,6 +1,3 @@
-# Property Listing BOOSTER v1 by ICNET
-# Simulates anonymous traffic using rotating Tor identities and headless browser CAPTCHA bypass
-
 import os
 import sys
 import time
@@ -23,7 +20,7 @@ init(autoreset=True)
 # === GLOBAL SETTINGS ===
 ZILLOW_ONLY_HEADLESS = True
 ZILLOW_EXPECTS_202 = True
-CHROMIUM_PATH = "/snap/bin/chromium"
+CHROMIUM_PATH = "/usr/bin/google-chrome"
 VISITS_PER_DAY = 200
 HEADLESS_WAIT_RANGE = (9, 14)
 WAIT_BETWEEN_VISITS = (10, 20)
@@ -35,18 +32,7 @@ def show_banner():
     print(Fore.GREEN + Style.BRIGHT)
     print("""
 ______                          _           _     _     _   _                
-| ___ \                        | |         | |   (_)   | | (_)               
-| |_/ / __ ___  _ __   ___ _ __| |_ _   _  | |    _ ___| |_ _ _ __   __ _    
-|  __/ '__/ _ \| '_ \ / _ \ '__| __| | | | | |   | / __| __| | '_ \ / _` |   
-| |  | | | (_) | |_) |  __/ |  | |_| |_| | | |___| \__ \ |_| | | | | (_| |   
-\_|  |_|  \___/| .__/ \___|_|   \__|\__, | \_____/_|___/\__|_|_| |_|\__, |   
-               | |                   __/ |                           __/ |   
-______         |_|     _            |___/_   ______ _____ _____ ___ |___/    
-| ___ \               | |             /\| |/\| ___ \  ___|_   _/ _ \ /\| |/\ 
-| |_/ / ___   ___  ___| |_ ___ _ __   \ ` ' /| |_/ / |__   | |/ /_\ \\ ` ' / 
-| ___ \/ _ \ / _ \/ __| __/ _ \ '__| |_     _| ___ \  __|  | ||  _  |_     _|
-| |_/ / (_) | (_) \__ \ ||  __/ |     / , . \| |_/ / |___  | || | | |/ , . \ 
-\____/ \___/ \___/|___/\__\___|_|     \/|_|\/\____/\____/  \_/\_| |_/\/|_|\/                                                                                                                                                                                                    
+BOOSTER                                                                                                                                                                                                   
 """)
     print(Fore.RED + Style.BRIGHT + "───  [🏠] Property Listing Booster — Powered by Python3 & Tor 🐍")
 
